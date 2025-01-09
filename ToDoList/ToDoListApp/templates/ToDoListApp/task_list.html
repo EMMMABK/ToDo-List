@@ -9,6 +9,7 @@
     <header></header>
     <main class="main">
         <h2 class="main__title">To Do List:</h2>
+        <a href="{% url 'task-create' %}">Add task</a>
         <table>
             <tr>
                 <th>Item</th>
@@ -16,6 +17,7 @@
             {% for task in tasks %}
             <tr>
                 <th>{{ task.title }}</th>
+                <th><a href="{% url 'task' task.id %}">View</a></th>
             </tr>
             {% empty %}
                 <h3 class="main_subtitle">No items in list</h3>
