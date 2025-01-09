@@ -7,13 +7,16 @@
 </head>
 <body>
     <header>
+        {{ request.user }}
         {% if request.user.is_authenticated %}
-            <p>{{ request.user }}</p>
-            <a href="">Logout</a>
+            <form action="{% url 'logout' %}" method="post" style="display: inline;">
+                {% csrf_token %}
+                <button type="submit">Logout</button>
+            </form>
         {% else %}
             <a href="{% url 'login' %}">Login</a>
         {% endif %}
-    </header>
+    </header>    
     <main class="main">
         <h2 class="main__title">To Do List:</h2>
         <a href="{% url 'task-create' %}">Add task</a>
