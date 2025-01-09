@@ -18,6 +18,7 @@
             <tr>
                 <th>{{ task.title }}</th>
                 <th><a href="{% url 'task' task.id %}">View</a></th>
+                <th><a href="{% url 'task-update' task.id %}">Edit task</a></th>
             </tr>
             {% empty %}
                 <h3 class="main_subtitle">No items in list</h3>
