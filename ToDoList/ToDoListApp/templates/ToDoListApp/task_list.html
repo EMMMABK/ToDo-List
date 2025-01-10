@@ -20,6 +20,12 @@
     <main class="main">
         <h2 class="main__title">To Do List:</h2>
         <a href="{% url 'task-create' %}">Add task</a>
+
+        <form method="get" action="">
+            <input type="text" name="search-area" value="{{search_input}}">
+            <input type="submit" value="Search">
+        </form>
+
         <table>
             <tr>
                 <th>Item</th>
