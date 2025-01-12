@@ -1,17 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'register.css' %}">
     <title>Register</title>
 </head>
 <body>
-    <form method="POST">
-        {% csrf_token %}
-        {{form.as_p}}
-        <input class="button" type="submit" value="Register">
-    </form>
-
-    <button class="item__button"><a href="{% url 'login' %}">Login</a></button>
+    <main class="main">
+        <div class="main__container_register">
+            <h2>To Do List App</h2>
+            <form method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button class="boton-elegante">Register</button>
+            </form>
+            <a class="boton-elegante" href="{% url 'login' %}">Login</a>
+        </div>
+    </main>
 </body>
 </html>
