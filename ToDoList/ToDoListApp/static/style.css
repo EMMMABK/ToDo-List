@@ -6,13 +6,16 @@
     outline: none;
     text-decoration: none;
 }
+
 body{
     background-color: #3F72AF;
 }
+
 .main{
     display: flex;
     justify-content: center;
 }
+
 .main__container{
     margin-top: 35px;
     padding-top: 30px;
@@ -23,6 +26,7 @@ body{
     border-radius: 50px;
     width: 40%;
 }
+
 .item__main{
     display: flex;
     flex-direction: column;
@@ -85,7 +89,16 @@ body{
 
 .item__main > form input:focus {
     background-color: white;
-    transform: scale(1.05);
+    transform: scale(0.95); 
     box-shadow: 13px 13px 100px #969696, 
                 -13px -13px 100px #ffffff;
+}
+
+@media (max-width: 450px){
+    .main{
+        display: block;
+    }
+    .main__container{
+        width: 100%;
+    }
 }
