@@ -41,6 +41,11 @@ To run this project, the following tools and technologies are required:
    python3 -m venv env
    python -m venv env
    ```
+
+   ```bash
+   .\env\Scripts\activate
+   source env/bin/activate
+   ```
    
 3. **Install project dependencies**:
    ```bash
