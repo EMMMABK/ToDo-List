@@ -65,14 +65,15 @@ To run this project, the following tools and technologies are required:
 
 You can add relevant screenshots of your application here. For example:
 
-1. **Login Page:**
-   ![Login Page](screenshots/login.png)
+![todolist]()
+![todolist]()
+![todolist]()
+![todolist]()
+![todolist]()
+![todolist]()
+![todolist]()
+![todolist]()
 
-2. **Task List Page:**
-   ![Task List](screenshots/task_list.png)
-
-3. **Task Details Page:**
-   ![Task Detail](screenshots/task_detail.png)
 
 ---
 
