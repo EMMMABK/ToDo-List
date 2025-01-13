@@ -35,28 +35,35 @@ To run this project, the following tools and technologies are required:
    ```bash
    git clone https://github.com/your-username/todolist.git
    ```
-2. **Install project dependencies**:
+
+2. **Create virtual environment**:
+   ```bash
+   python3 -m venv env
+   python -m venv env
+   ```
+   
+3. **Install project dependencies**:
    ```bash
    cd todolist
    pip install -r requirements.txt
    ```
 
-3. **Setup the database**:
+4. **Setup the database**:
    ```bash
    python manage.py migrate
    ```
 
-4. **Create a superuser**:
+5. **Create a superuser**:
    ```bash
    python manage.py createsuperuser
    ```
 
-5. **Run the server**:
+6. **Run the server**:
    ```bash
    python manage.py runserver
    ```
 
-6. **Access the app**: 
+7. **Access the app**: 
    Visit `http://127.0.0.1:8000/` in your web browser.
 
 ---
