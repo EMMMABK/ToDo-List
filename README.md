@@ -116,13 +116,13 @@ Here is an Entity-Relationship (E-R) diagram for the database schema:
 
 The project is hosted on GitHub. You can clone, fork, and contribute to it here:
 
-[GitHub Repository: ToDoList](https://github.com/your-username/todolist)
+[GitHub Repository: ToDoList](https://github.com/EMMMABK/ToDo-List.git)
 
 ---
 
 ## **License**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ---
 
