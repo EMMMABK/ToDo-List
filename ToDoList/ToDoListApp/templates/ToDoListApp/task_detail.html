@@ -1,14 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'detail.css' %}">
     <title>Task's detail</title>
 </head>
 <body>
     <header></header>
     <main class="main">
         <h2 class="main__title">Task: {{task}}</h2>
+        <a class="back_btn" href="{% url 'tasks' %}">Back</a>
+        <div class="main__details">
+            <h3>Description</h3>
+            <p>{{ task.description|default:"No description provided." }}</p>
+            <h3>Completion Status</h3>
+            <p>
+                <span>Status:</span> {{ task.complete|yesno:"Completed,Not Completed" }}
+            </p>
+            <h3>Created On</h3>
+            <p>{{ task.create|date:"F j, Y, g:i a" }}</p>
+        </div>
     </main>
 </body>
 </html>
