@@ -95,24 +95,6 @@ You can add tasks through the web interface after logging in.
 
 Below is a UML class diagram representing the structure of the application:
 
-![UML Class Diagram](diagrams/class_diagram.png)
-
-- **User**: Represents the user of the application (inherits from Django's built-in `User` model).
-- **Task**: The main entity, representing a task in the to-do list. Each task is associated with a user.
-
----
-
-## **E-R Diagrams**
-
-Here is an Entity-Relationship (E-R) diagram for the database schema:
-
-![E-R Diagram](diagrams/er_diagram.png)
-
-- **User**: Each user has multiple tasks.
-- **Task**: Each task is linked to a single user, with fields like title, description, and completion status.
-
----
-
 ## **Github Repository**
 
 The project is hosted on GitHub. You can clone, fork, and contribute to it here:
