@@ -65,14 +65,14 @@ To run this project, the following tools and technologies are required:
 
 You can add relevant screenshots of your application here. For example:
 
-![todolist]()
-![todolist]()
-![todolist]()
-![todolist]()
-![todolist]()
-![todolist]()
-![todolist]()
-![todolist]()
+![todolist](assets/todolist-screen1.png)
+![todolist](assets/todolist-screen2.png)
+![todolist](assets/todolist-screen3.png)
+![todolist](assets/todolist-screen4.png)
+![todolist](assets/todolist-screen5.png)
+![todolist](assets/todolist-screen6.png)
+![todolist](assets/todolist-screen7.png)
+![todolist](assets/todolist-screen8.png)
 
 
 ---
