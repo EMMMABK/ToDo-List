@@ -1,0 +1,116 @@
+body{
+    background-color: #3F72AF;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.button_back {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+}
+   
+.button_back > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+   
+.button_back:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+   
+.button_back:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+}
+
+.noselect {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+    margin-left: 100px;
+}
+   
+.noselect, .noselect span {
+    transition: 200ms;
+}
+   
+.noselect .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+   
+.noselect .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+.noselect svg {
+    width: 15px;
+    fill: #eee;
+}
+   
+.noselect:hover {
+    background: #ff3636;
+}
+   
+.noselect:hover .text {
+    color: transparent;
+}
+   
+.noselect:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+   
+.noselect:focus {
+    outline: none;
+}
+   
+.noselect:active .icon svg {
+    transform: scale(0.8);
+}
+
+@media (max-width: 350px){
+    .noselect{
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 300px){
+    .noselect{
+        margin-left: 0;
+    }
+}
